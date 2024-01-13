@@ -1,0 +1,15 @@
+.panda-img{
+    animation: Float 2s ease-in-out infinite;
+    animation-delay: 1s, 3s;   
+}
+@keyframes Float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
