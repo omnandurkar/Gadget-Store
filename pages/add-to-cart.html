@@ -8,10 +8,13 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 rel="stylesheet"
 />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
 rel="stylesheet"
 />
+<link rel="stylesheet" href="../css/add-to-cart.css">
 </head>
 <body>
     <section class="h-100 gradient-custom">
@@ -42,11 +45,11 @@ rel="stylesheet"
                       <p><strong>Air Canon</strong></p>
                       <!-- <p>Color: blue</p>
                       <p>Size: M</p> -->
-                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 text-blue" data-mdb-toggle="tooltip"
                         title="Remove item">
                         <i class="fas fa-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                      <button type="button" class="btn btn-danger btn-sm mb-2 text-red" data-mdb-toggle="tooltip"
                         title="Move to the wish list">
                         <i class="fas fa-heart"></i>
                       </button>
@@ -56,7 +59,7 @@ rel="stylesheet"
                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                       <!-- Quantity -->
                       <div class="d-flex mb-4" style="max-width: 300px">
-                        <button class="btn btn-primary px-3 me-2"
+                        <button class="btn btn-primary px-3 me-2 text-blue"
                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                           <i class="fas fa-minus"></i>
                         </button>
@@ -66,7 +69,7 @@ rel="stylesheet"
                           <label class="form-label" for="form1"></label>
                         </div>
       
-                        <button class="btn btn-primary px-3 ms-2"
+                        <button class="btn btn-primary px-3 ms-2 text-blue"
                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                           <i class="fas fa-plus"></i>
                         </button>
@@ -104,11 +107,11 @@ rel="stylesheet"
                       <!-- <p>Color: red</p>
                       <p>Size: M</p> -->
       
-                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 text-blue" data-mdb-toggle="tooltip"
                         title="Remove item">
                         <i class="fas fa-trash"></i>
                       </button>
-                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                      <button type="button" class="btn btn-danger btn-sm mb-2 text-red" data-mdb-toggle="tooltip"
                         title="Move to the wish list">
                         <i class="fas fa-heart"></i>
                       </button>
@@ -118,7 +121,7 @@ rel="stylesheet"
                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                       <!-- Quantity -->
                       <div class="d-flex mb-4" style="max-width: 300px">
-                        <button class="btn btn-primary px-3 me-2"
+                        <button class="btn btn-primary px-3 me-2 text-blue"
                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                           <i class="fas fa-minus"></i>
                         </button>
@@ -128,7 +131,7 @@ rel="stylesheet"
                           <label class="form-label" for="form1"></label>
                         </div>
       
-                        <button class="btn btn-primary px-3 ms-2"
+                        <button class="btn btn-primary px-3 ms-2 text-blue"
                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                           <i class="fas fa-plus"></i>
                         </button>
@@ -195,7 +198,7 @@ rel="stylesheet"
                     </li>
                   </ul>
       
-                  <a href="../pages/checkout.html"><button type="button" class="btn btn-primary btn-lg btn-block">
+                  <a href="../pages/checkout.html"><button type="button" class="btn btn-primary btn-lg btn-block text-blue">
                     Go to checkout
                   </button></a>
                 </div>
