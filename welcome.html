@@ -25,7 +25,8 @@
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Innovate Your World with Doraemon's Extraordinary Gadgets</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Explore</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Explore</button>
                     <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Go Without SignIn</button> -->
                 </div>
             </div>
@@ -44,6 +45,113 @@
         </div>
 
     </div>
+
+    <!-- <====================== MODAL ==============================> -->
+
+    <!-- Modal -->
+    <div class="text-start ">
+
+        <div class="modal fade " id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me On This Device</label>
+                            </div>
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3"
+                            data-bs-toggle="modal" data-bs-target="#exampleModa2">Sign Up?</button>
+                        <!-- ============================= -->
+
+                        <!-- =============================== -->
+                        <a href="index.html" >
+                            <a href="index.html" ><button type="Submit" class="btn btn-primary">Sign In</button>
+                        </a>
+                        <a href="index.html" >
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Sign Up</h1>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock" class="form-text ">
+                                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                              <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Remember Me On This Device</label>
+                            </div>
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In?</button>
+                        <!-- ============================= -->
+                        
+                        <!-- =============================== -->
+                        <a href="index.html" >
+                            <button type="Submit" class="btn btn-primary">Sign Up</button>
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
 
 
 
