@@ -74,11 +74,6 @@
                         <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModa2">Sign Up?</button>
                         <button type="button" class="btn btn-primary" id="loginBtn">Sign In</button>
-
-                        <!-- <a href="./pages/home.html">
-                             FOR DIRECT LOGIN WITHOUT CREdentials     DIRECT LOGIN DIRECT LOGIN DIRECT LOGIN DIRECT LOGIN
-                        </a> -->
-
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -142,18 +137,30 @@
                 const loginForm = document.getElementById('loginForm');
     
                 document.getElementById('signUpBtn').addEventListener('click', function () {
+                    // Extract email and password from the signup form
                     const email = signUpForm.querySelector('#exampleFormControlInput1').value;
                     const password = signUpForm.querySelector('#inputPassword5').value;
     
-                    //  local storage
+                    // Check if the fields are empty
+                    if (!email || !password) {
+                        // Display an alert if any field is empty
+                        alert('Please fill in all fields.');
+                        return; // Stop further execution
+                    }
+    
+                    // Save user credentials to local storage
                     const userData = { email, password };
                     localStorage.setItem('userData', JSON.stringify(userData));
+                    alert('Data has been added successfully!');
     
+                    // Console log to indicate user is added during signup
                     console.log('User added:', userData);
     
-                    //redirect to the login page or handle it as needed
+                    // You can redirect to the login page or handle it as needed
                     signUpForm.reset();
                     $('#exampleModa2').modal('hide');
+
+                    
                 });
     
                 document.getElementById('loginBtn').addEventListener('click', function () {
@@ -165,11 +172,13 @@
                         const enteredPassword = loginForm.querySelector('#exampleInputPassword1').value;
     
                         if (enteredEmail === storedEmail && enteredPassword === storedPassword) {
-                            
+                            // Console log to indicate successful login
                             console.log('Login Successful');
+    
+                            // Redirect to the next page after successful login
                             window.location.href = "./pages/home.html";
                         } else {
-    
+                            // Display appropriate message for different scenarios
                             if (enteredEmail !== storedEmail) {
                                 alert('Invalid email. Account not found.');
                             } else {
