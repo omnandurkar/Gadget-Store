@@ -18,9 +18,7 @@
 
 <body class="d-flex h-100 text-center text-bg-light justify-content-center sample">
 
-
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center sample">
-
 
         <div class="px-4 pt-5 my-5 text-center border-bottom">
             <h1 class="display-2 fw-bold text-body-emphasis">Doraemon Gadget Store</h1>
@@ -29,12 +27,10 @@
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
                     <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Explore</button>
-                    <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Go Without SignIn</button> -->
                 </div>
             </div>
             <div class="overflow-y-hidden overflow-x-visible  pt-5  " style="max-height: 55vh;">
                 <div class="container px-5">
-                    <!-- <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"> -->
                     <div class=" panda-img img-fluid ">
                         <img class=" img-fluid " src="./images/Home-Img/3D/doraemon1.png" height="550px">
                     </div>
@@ -45,14 +41,10 @@
         <div class="text-center">
             <p>&#169; Copyright - Gadget Store</p>
         </div>
-
     </div>
-
-    <!-- <====================== MODAL ==============================> -->
 
     <!-- Modal -->
     <div class="text-start ">
-
         <div class="modal fade " id="exampleModal" tabindex="-1" data-bs-backdrop="static"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -62,12 +54,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="loginForm">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
-                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -77,99 +68,120 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember Me On This Device</label>
                             </div>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModa2">Sign Up?</button>
-                        <!-- ============================= -->
+                        <button type="button" class="btn btn-primary" id="loginBtn">Sign In</button>
 
-                        <!-- =============================== -->
-                        <a href="./pages/home.html" >
-                            <button type="Submit" class="btn btn-primary">Sign In</button>
-                        </a>
-                        <a href="./pages/home.html" >
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </a>
+                        <!-- <a href="./pages/home.html">
+                             FOR DIRECT LOGIN WITHOUT CREdentials     DIRECT LOGIN DIRECT LOGIN DIRECT LOGIN DIRECT LOGIN
+                        </a> -->
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Sign Up</h1>
-                        
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        
-                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                                <div id="passwordHelpBlock" class="form-text ">
-                                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                              <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Remember Me On This Device</label>
-                            </div>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                          </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In?</button>
-                        <!-- ============================= -->
-                        
-                        <!-- =============================== -->
-                        <a href="./pages/home.html" >
-                            <button type="Submit" class="btn btn-primary">Sign Up</button>
-                        </a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
+        <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Sign Up</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signUpForm">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock" class="form-text ">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must
+                                    not contain spaces, special characters, or emoji.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me On This Device</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning position-absolute bottom-1 start-0 mx-3"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In?</button>
+                        <button type="button" class="btn btn-primary" id="signUpBtn">Sign Up</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const signUpForm = document.getElementById('signUpForm');
+                const loginForm = document.getElementById('loginForm');
+    
+                document.getElementById('signUpBtn').addEventListener('click', function () {
+                    const email = signUpForm.querySelector('#exampleFormControlInput1').value;
+                    const password = signUpForm.querySelector('#inputPassword5').value;
+    
+                    //  local storage
+                    const userData = { email, password };
+                    localStorage.setItem('userData', JSON.stringify(userData));
+    
+                    console.log('User added:', userData);
+    
+                    //redirect to the login page or handle it as needed
+                    signUpForm.reset();
+                    $('#exampleModa2').modal('hide');
+                });
+    
+                document.getElementById('loginBtn').addEventListener('click', function () {
+                    const storedUserData = localStorage.getItem('userData');
+    
+                    if (storedUserData) {
+                        const { email: storedEmail, password: storedPassword } = JSON.parse(storedUserData);
+                        const enteredEmail = loginForm.querySelector('#exampleInputEmail1').value;
+                        const enteredPassword = loginForm.querySelector('#exampleInputPassword1').value;
+    
+                        if (enteredEmail === storedEmail && enteredPassword === storedPassword) {
+                            
+                            console.log('Login Successful');
+                            window.location.href = "./pages/home.html";
+                        } else {
+    
+                            if (enteredEmail !== storedEmail) {
+                                alert('Invalid email. Account not found.');
+                            } else {
+                                alert('Invalid password. Please check your password.');
+                            }
+                        }
+                    } else {
+                        alert('No user registered. Please sign up.');
+                    }
+                });
+            });
+        </script>
 
 </body>
 
